@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ffb8;
+}
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.nav a:hover {
+  color: #00ffb8;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+.hero h1 {
+  font-size: 50px;
+  animation: fadeIn 2s ease-in-out;
+}
+.hero span {
+  color: #00ffb8;
+}
+.role {
+  font-size: 20px;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out 1s both;
+}
+.btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #00ffb8;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #00c99f;
+}
+.section {
+  padding: 100px 50px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+li {
+  margin: 10px 0;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
