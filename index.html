@@ -1691,7 +1691,7 @@ A professional business website designed for a workforce solutions platform. Foc
       <div class="container">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-container">
-          <form id="contact-form" class="contact-form" action="https://formsubmit.co/unais0715@gmail.com" method="POST">
+          <!-- <form id="contact-form" class="contact-form" action="https://formsubmit.co/unais0715@gmail.com" method="POST">
             <div class="form-group">
               <input type="text" id="name" name="name" required />
               <label for="name">Name</label>
@@ -1708,7 +1708,32 @@ A professional business website designed for a workforce solutions platform. Foc
               <span class="error-message"></span>
             </div>
             <button type="submit" class="btn">Send Message</button>
-          </form>
+          </form> -->
+          <form id="contact-form" class="contact-form" action="https://formsubmit.co/unais0715@gmail.com" method="POST">
+  <!-- Hidden fields to control email content -->
+  <input type="hidden" name="_subject" value="New Contact Form Submission">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+  <input type="hidden" name="_website" value="Ziya's Portfolio Website">
+
+  <div class="form-group">
+    <input type="text" id="name" name="name" required />
+    <label for="name">Name</label>
+    <span class="error-message"></span>
+  </div>
+  <div class="form-group">
+    <input type="email" id="email" name="email" required />
+    <label for="email">Email</label>
+    <span class="error-message"></span>
+  </div>
+  <div class="form-group">
+    <textarea id="message" name="message" required></textarea>
+    <label for="message">Message</label>
+    <span class="error-message"></span>
+  </div>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
           <!-- <form action="https://formsubmit.co/unais0715@gmail.com" method="POST">
   <input type="text" name="name" required>
   <input type="email" name="email" required>
@@ -1982,6 +2007,6 @@ A professional business website designed for a workforce solutions platform. Foc
     </script>
   </body>
 </html>
-<!-- < ! - -   T r i g g e r   r e b u i l d   - - > 
+< ! - -   T r i g g e r   r e b u i l d   - - > 
  
-  -->
+ 
